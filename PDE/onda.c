@@ -28,7 +28,7 @@ int main (){
   dx = x[1]-x[0];
   dt = 0.0005;
   c = 1.0;
-  tiempo = 1000;
+  tiempo = 2000;
   r = c*(dt/dx);
 
   /*Se crea el estado inicial*/
@@ -40,7 +40,7 @@ int main (){
   new[n_points-1] = 0.0;
 
   for (i=1;i<n_points-1;i++){
-    current[i] = exp(-1*pow((x[i]-0.5),2)/0.01);
+    current[i] = exp(-1*pow((x[i]-0.3),2)/0.01);
   }
 
 /*Se imprimen los puntos en x.*/
